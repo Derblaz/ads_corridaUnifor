@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Register">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" tools:srcCompat="@drawable/default_image_profile"
+            android:id="@+id/imageProfile"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" android:contentDescription="@string/imageDescription_profile"
+            app:srcCompat="@drawable/default_image_profile"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imageProfile"
+            android:id="@+id/lblname">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_name" android:id="@+id/editTextName" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup
+            android:layout_width="0dp" android:orientation="horizontal"
+            android:layout_height="28dp"
+            android:baselineAligned="false"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginRight="32dp" android:id="@+id/radioGroup"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/lblname">
+        <RadioButton
+                android:text="@string/prompt_male"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/male" android:layout_weight="1"
+        />
+        <RadioButton
+                android:text="@string/prompt_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/female" android:layout_weight="1"/>
+    </RadioGroup>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:id="@+id/lblemail"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp" android:layout_marginEnd="32dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email" android:inputType="textEmailAddress"
+                android:id="@+id/editTextEmail" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="32dp" android:layout_marginEnd="32dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/lblemail" android:id="@+id/lblPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password" android:id="@+id/editTextPassword"
+                android:inputType="textWebPassword" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/lblPassword" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginRight="32dp" android:id="@+id/lblPhone">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_phone" android:id="@+id/EditTextPhone" android:inputType="phone"
+                android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/lblPhone" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp" android:layout_marginEnd="32dp"
+            android:id="@+id/lblDiscipline">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_discipline" android:id="@+id/EditTextDiscipline"
+                android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblClass" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/lblDiscipline" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginRight="32dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_class" android:id="@+id/EditTextClass" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+            android:text="@string/btn_update_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister" app:layout_constraintStart_toEndOf="@+id/imageProfile"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginRight="32dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/lblname"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

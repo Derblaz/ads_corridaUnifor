@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Corrida Unifor</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Bem Vindo !"</string>
+    <string name="invalid_username">"Não é um nome valido"</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">"Registrar"</string>
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_male">Masculino</string>
+    <string name="prompt_female">Feminino</string>
+    <string name="imageDescription_profile">Perfil</string>
+    <string name="prompt_phone">Telefone</string>
+    <string name="prompt_discipline">Disciplina</string>
+    <string name="prompt_class">Turma</string>
+    <string name="btn_update_image">Alterar</string>
+    <string name="initial_greeting">Bem Vindo!</string>
+</resources>
